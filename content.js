@@ -1,5 +1,5 @@
 function replaceProfilePictures() {
-    const newImageUrl = 'https://images.app.goo.gl/X74M7g131D2qNoEJ9';
+    const newImageUrl = chrome.runtime.getURL('newProfilePicture.png');
     
     try {
         const profilePictures = document.querySelectorAll('img.update-components-actor__avatar-image');
